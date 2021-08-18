@@ -1,0 +1,31 @@
+
+Ссылка: https://coursehunter.net/course/fullstack-master-razrabotka-crm-sistemy-na-node-js-express-angular-6
+
+---
+
+К уроку: 90
+
+---
+
+Чтобы не перезаписывалась переменная, а добавлялись в неё данные:
+
+// Получаем данные
+const res = await store.dispatch('order/actionSetOffset');
+// Добавляем данные
+orders.value = [...orders.value, ...res];
+// orders.value = orders.value.concat(res); // или так
+
+***
+
+Скрываем кнопку "Загрузить ещё":
+
+Нужно сверить количество лимита(limit) с количеством пришедших данных.
+К примеру в лимите поставили 3, а записей пришло 2. Это означает что записи закончились в БД и скрываем кнопку.
+
+***
+
+if (!start || !end) {
+  return isValid.value = true;
+}
+
+isValid.value = start < end;
