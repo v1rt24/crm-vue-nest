@@ -1,0 +1,14 @@
+.idea
+client/node_modules
+client/dist
+client/srcOR
+client/dist-ssr
+client/*.local
+
+server/node_modules
+server/dist
+server/srcOR
+
+node_modules
+.gitignore
+НОМЕР УРОКА.txt
